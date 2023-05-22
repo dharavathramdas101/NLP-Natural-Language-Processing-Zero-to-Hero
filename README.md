@@ -22,6 +22,65 @@ There are a lot of mistakes in writing English text or for other languages text,
 👉 Unigrams, Bigrams, and Ngrams  
 #### Description:
     All these are the primary methods to convert our Text data into numerical data (Vectors) to apply a Machine Learning algorithm to it. 
+These techniques are useful to store the meaning of the tokens in relationship with other tokens that will be useful for predictive machine learning models.
+
+Whenever we work with text data, we need numeric data so that the machine can understand. These methods are useful because they convert the text tokens to numeric values/vectors so that the machine learning models process this semantic information between the information.
+
+Bag of Words (BOW) or Count Vectorizer
+Models can be used:
+
+Sklearn library provides the model as Count Vectorizer
+Gensim library provides the model as Doc2vec
+Bag of words is also called DTM i.e. Document Term Matrix, the vectors are stored in matrix form. The bag word is used to store the token’s vocabulary.
+
+> Pros of BOW:
+
+This process counts the frequency of tokens.
+The implementation is very easy.
+The classification and feature extraction applications can be based on this technique.
+> Cons of BOW:
+The tokens increases in the bag as the length of the data increases.
+The sparsity in the matrix will also increase as the size of the input data increases. The number of zero’s in the sparsity matrix is more than non-zero numbers.
+There is no relationship/semantic connection with each other because the text is split into independent words.
+Term Frequency-Inverse Document Frequency (TF-IDF)
+There are two methods in TF-IDF in the sklearn library
+
+TF-IDF Vectorizer and TF-IDF Transformer
+The TF-IDF implementation tries to get information from the uncommon words.
+
+Type of TF-IDF methods:
+
+The output of the bag of words is used by TF-IDF Transformer and does the further process.
+This TF-IDF Vectorizer method takes the raw data as input and does further process.
+Pros of TF-IDF:
+
+It slightly overcomes the semantic information between tokens.
+Cons of TF-IDF:
+
+This method gives chance for the model to overfit.
+Not so much a semantic relationship between the tokens.
+Use cases of Level BOW and TF-IDF
+
+The classification model of machine learning can use these techniques.
+Code Flow of BOW
+
+
+Code Flow of TF-IDF
+
+
+One Hot representation of Words
+
+The encoding of the text can be done with the help of a one-hot method to map the text into numeric.
+
+One-hot encoding representation in Text
+Example: You are very Brave
+
+
+The one-hot encoding makes the token into vectors. Each word gets its index position to represent different vectors for different words. This example shows only with 4 words but if the vocabulary size increases it increases the vector size increases.
+
+Cons:
+
+The more big-size vectors are complicated to train in the machine learning model.
 ### Step 4. Text Preprocessing Level-3:  
 Word2vec, AvgWord2vec, Glove, Fast Text
 #### Description
