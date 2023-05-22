@@ -44,17 +44,17 @@ Bag of words is also called DTM i.e. Document Term Matrix, the vectors are store
 > Term Frequency-Inverse Document Frequency (TF-IDF)
 There are two methods in TF-IDF in the sklearn library
 
-TF-IDF Vectorizer and TF-IDF Transformer
+##### TF-IDF Vectorizer and TF-IDF Transformer
 The TF-IDF implementation tries to get information from the uncommon words.
 
-Type of TF-IDF methods:
+##### Type of TF-IDF methods:
 
 The output of the bag of words is used by TF-IDF Transformer and does the further process.
 This TF-IDF Vectorizer method takes the raw data as input and does further process.
 Pros of TF-IDF:
 
 It slightly overcomes the semantic information between tokens.
-Cons of TF-IDF:
+##### Cons of TF-IDF:
 
 This method gives chance for the model to overfit.
 Not so much a semantic relationship between the tokens.
@@ -67,7 +67,7 @@ Code Flow of BOW
 Code Flow of TF-IDF
 
 
-One Hot representation of Words
+#### One Hot representation of Words
 
 The encoding of the text can be done with the help of a one-hot method to map the text into numeric.
 
@@ -77,11 +77,12 @@ Example: You are very Brave
 
 The one-hot encoding makes the token into vectors. Each word gets its index position to represent different vectors for different words. This example shows only with 4 words but if the vocabulary size increases it increases the vector size increases.
 
-Cons:
-
+##### Cons:
 The more big-size vectors are complicated to train in the machine learning model.
+
 ### Step 4. Text Preprocessing Level-3:  
 Word2vec, AvgWord2vec, Glove, Fast Text
+
 #### Description
     All these are advanced techniques to convert words into vectors.
 ### Step 5. Solve Machine Learning Use cases
