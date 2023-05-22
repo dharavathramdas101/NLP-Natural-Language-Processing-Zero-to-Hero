@@ -21,28 +21,27 @@ There are a lot of mistakes in writing English text or for other languages text,
 👉 TFIDF, 
 👉 Unigrams, Bigrams, and Ngrams  
 #### Description:
-    All these are the primary methods to convert our Text data into numerical data (Vectors) to apply a Machine Learning algorithm to it. 
-These techniques are useful to store the meaning of the tokens in relationship with other tokens that will be useful for predictive machine learning models.
+> All these are the primary methods to convert our Text data into numerical data (Vectors) to apply a Machine Learning algorithm to it. 
+> These techniques are useful to store the meaning of the tokens in relationship with other tokens that will be useful for predictive machine learning models.
 
-Whenever we work with text data, we need numeric data so that the machine can understand. These methods are useful because they convert the text tokens to numeric values/vectors so that the machine learning models process this semantic information between the information.
+> Whenever we work with text data, we need numeric data so that the machine can understand. These methods are useful because they convert the text tokens to numeric values/vectors so that the machine learning models process this semantic information between the information.
 
-Bag of Words (BOW) or Count Vectorizer
-Models can be used:
-
+#### Bag of Words (BOW) or Count Vectorizer
+##### Models can be used:
 Sklearn library provides the model as Count Vectorizer
 Gensim library provides the model as Doc2vec
 Bag of words is also called DTM i.e. Document Term Matrix, the vectors are stored in matrix form. The bag word is used to store the token’s vocabulary.
 
-> Pros of BOW:
+##### Pros of BOW:
 
-This process counts the frequency of tokens.
-The implementation is very easy.
-The classification and feature extraction applications can be based on this technique.
-> Cons of BOW:
-The tokens increases in the bag as the length of the data increases.
-The sparsity in the matrix will also increase as the size of the input data increases. The number of zero’s in the sparsity matrix is more than non-zero numbers.
-There is no relationship/semantic connection with each other because the text is split into independent words.
-Term Frequency-Inverse Document Frequency (TF-IDF)
+> This process counts the frequency of tokens.
+> The implementation is very easy.
+> The classification and feature extraction applications can be based on this technique.
+##### Cons of BOW:
+> The tokens increases in the bag as the length of the data increases.
+> The sparsity in the matrix will also increase as the size of the input data increases. The number of zero’s in the sparsity matrix is more than non-zero numbers.
+> There is no relationship/semantic connection with each other because the text is split into independent words.
+> Term Frequency-Inverse Document Frequency (TF-IDF)
 There are two methods in TF-IDF in the sklearn library
 
 TF-IDF Vectorizer and TF-IDF Transformer
