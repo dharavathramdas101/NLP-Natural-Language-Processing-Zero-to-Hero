@@ -1,6 +1,7 @@
 ## NLP-Natural-Language-Processing
 
-### 1.Text Preprocessing Level-1 : Tokenization, Lemmatization, Stemming, Stop Words
+### 1.Text Preprocessing Level-1 : 
+Remove Special Characters, Convert Lowercase, Stop word removal, Tokenization, Lemmatization, Stemming
 ### 2.Text Preprocessing Level-2(word to vec): Bag Of Words(BOW), TFIDF, Unigrams, Bigrams, Ngrams  some disadvantages with this so to overcome 
 ### 3.Text Preprocessing Level-3:  Word2vec, AvgWord2vec
 ### 4.Solve Machine Learning Usecases
